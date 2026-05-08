@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Frontend quiz app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <script type="module" src="/script.js"></script>
+  </head>
+  <body>
+    <header class="quiz-header">
+      <div class="quiz-header__current-subject">
+        <div class="button-icon-container">
+          <img class="subject-img" src="" alt="" />
+        </div>
+        <h2 class="subject-chosen"></h2>
+      </div>
+
+      <div class="theme-toggle">
+        <img src="assets/images/icon-sun-dark.svg" alt="" />
+
+        <label class="theme-switch">
+          <span class="sr-only">Toggle dark mode</span>
+          <input class="theme-switch__input" type="checkbox" />
+          <span class="theme-switch__slider"></span>
+        </label>
+
+        <img src="assets/images/icon-moon-dark.svg" alt="" />
+      </div>
+    </header>
+    <main class="quiz">
+      <section class="quiz__screen quiz__screen--menu">
+        <div class="quiz__intro">
+          <h1>Welcome to the <br /><strong>Frontend Quiz!</strong></h1>
+          <p>Pick a subject to get started.</p>
+        </div>
+
+        <div class="quiz__subjects">
+          <button
+            class="quiz__card quiz__subject"
+            type="button"
+            data-subject="HTML"
+          >
+            <div class="button-icon-container">
+              <img src="assets/images/icon-html.svg" />
+            </div>
+
+            HTML
+          </button>
+
+          <button
+            class="quiz__card quiz__subject"
+            type="button"
+            data-subject="CSS"
+          >
+            <div class="button-icon-container">
+              <img src="assets/images/icon-css.svg" />
+            </div>
+
+            CSS
+          </button>
+
+          <button
+            class="quiz__card quiz__subject"
+            type="button"
+            data-subject="JavaScript"
+          >
+            <div class="button-icon-container">
+              <img src="assets/images/icon-js.svg" />
+            </div>
+
+            JavaScript
+          </button>
+
+          <button
+            class="quiz__card quiz__subject"
+            type="button"
+            data-subject="Accessibility"
+          >
+            <div class="button-icon-container">
+              <img src="assets/images/icon-accessibility.svg" />
+            </div>
+            Accessibility
+          </button>
+        </div>
+      </section>
+
+      <section class="quiz__screen quiz__screen--game" hidden>
+        <div class="quiz__question-area">
+          <div class="quiz__question-area__text">
+            <p class="quiz__progress-text">
+              Question <span class="quiz__current-question">1</span> of 10
+            </p>
+            <h2 class="quiz__question-text"></h2>
+          </div>
+          <progress class="quiz__progress" value="1" max="10"></progress>
+        </div>
+
+        <form class="quiz__answers">
+          <fieldset class="quiz__fieldset">
+            <legend class="sr-only">Choose one answer</legend>
+
+            <label class="quiz__option">
+              <input type="radio" name="answer" value="0" />
+              <span class="quiz__option-letter">A</span>
+              <span class="quiz__option-text"></span>
+              <img class="quiz__option-result-icon" src="" alt="" hidden />
+            </label>
+
+            <label class="quiz__option">
+              <input type="radio" name="answer" value="1" />
+              <span class="quiz__option-letter">B</span>
+              <span class="quiz__option-text"></span>
+              <img class="quiz__option-result-icon" src="" alt="" hidden />
+            </label>
+
+            <label class="quiz__option">
+              <input type="radio" name="answer" value="2" />
+              <span class="quiz__option-letter">C</span>
+              <span class="quiz__option-text"></span>
+              <img class="quiz__option-result-icon" src="" alt="" hidden />
+            </label>
+
+            <label class="quiz__option">
+              <input type="radio" name="answer" value="3" />
+              <span class="quiz__option-letter">D</span>
+              <span class="quiz__option-text"></span>
+              <img class="quiz__option-result-icon" src="" alt="" hidden />
+            </label>
+          </fieldset>
+          <button class="quiz__submit" type="submit">Submit Answer</button>
+          <div class="quiz__error" aria-live="polite">
+            <img
+              src="assets/images/icon-incorrect.svg"
+              class="quiz__error-logo"
+              hidden
+            />
+            <span class="quiz__error-text"></span>
+          </div>
+        </form>
+      </section>
+
+      <section class="quiz__screen quiz__screen--result" hidden>
+        <div class="quiz__intro">
+          <h1>Quiz completed <strong>You scored...</strong></h1>
+        </div>
+
+        <div class="quiz__score-card">
+          <div class="quiz-score__current-subject">
+            <div class="button-icon-container">
+              <img class="subject-img" src="" alt="" />
+            </div>
+            <h2 class="subject-chosen"></h2>
+          </div>
+
+          <p class="quiz__score"></p>
+          <p class="quiz__score-total">out of 10</p>
+        </div>
+
+        <button class="quiz__retry" type="button">Play Again</button>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://github.com/RemiPish"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Rémi P</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
