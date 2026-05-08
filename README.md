@@ -20,7 +20,7 @@ This is a solution to the [Frontend quiz app challenge on Frontend Mentor](https
 
 ### Links
 
- Live Site URL: [Vercel](https://frontend-tip-calculator-five.vercel.app/)
+ Live Site URL: [Vercel](https://frontend-quiz-app-mu-nine.vercel.app/)
 
 ## My process
 
