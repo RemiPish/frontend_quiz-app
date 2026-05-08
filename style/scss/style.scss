@@ -167,6 +167,10 @@ p {
     display: none;
 }
 
+.transparent{
+    opacity: 0;
+}
+
 .quiz__subjects {
     display: flex;
     flex-direction: column;

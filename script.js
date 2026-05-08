@@ -34,6 +34,7 @@ const ui = {
   answerOptions: document.querySelectorAll(".quiz__option"),
   answerIcons: document.querySelectorAll(".quiz__option-result-icon"),
   submitButton: document.querySelector(".quiz__submit"),
+  titleCategory: document.querySelector(".quiz-header__current-subject")
 };
 
 const themeToggle = document.querySelector(".theme-switch__input");
@@ -97,7 +98,7 @@ function startQuiz(subject) {
   state.currentCategory = state.currentQuiz.title;
   state.hasSubmittedAnswer = false;
   ui.submitButton.textContent = "Submit Answer";
-
+  ui.titleCategory.classList.remove("transparent");
   showScreen("game");
   renderQuestion();
 }
@@ -199,6 +200,7 @@ function resetGame() {
   state.score = 0;
   state.hasSubmittedAnswer = false;
   ui.submitButton.textContent = "Submit Answer";
+  ui.titleCategory.classList.add("transparent");
   clearSelectedAnswer();
   showScreen("menu");
 }
