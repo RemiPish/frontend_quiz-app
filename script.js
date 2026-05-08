@@ -63,7 +63,7 @@ init();
 
 async function init() {
   try {
-    const response = await fetch("./data.json");
+    const response = await fetch("/data.json");
 
     if (!response.ok) {
       throw new Error(`Failed to load data: ${response.status}`);
@@ -113,25 +113,25 @@ function renderQuestion() {
   switch (state.currentCategory) {
     case "HTML":
       ui.chosenSubjectImgs.forEach((img) => {
-        img.src = "../assets/images/icon-html.svg";
+        img.src = "/assets/images/icon-html.svg";
         img.alt = "HTLM logo";
       });
       break;
     case "CSS":
       ui.chosenSubjectImgs.forEach((img) => {
-        img.src = "../assets/images/icon-css.svg";
+        img.src = "/assets/images/icon-css.svg";
         img.alt = "CSS logo";
       });
       break;
     case "JavaScript":
       ui.chosenSubjectImgs.forEach((img) => {
-        img.src = "../assets/images/icon-js.svg";
+        img.src = "/assets/images/icon-js.svg";
         img.alt = "JS logo";
       });
       break;
     case "Accessibility":
       ui.chosenSubjectImgs.forEach((img) => {
-        img.src = "../assets/images/icon-accessibility.svg";
+        img.src = "/assets/images/icon-accessibility.svg";
         img.alt = "Accessibility logo";
       });
       break;

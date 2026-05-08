@@ -24,9 +24,9 @@ $red-500: #EE5454;
     --color-muted: #{$grey-500};
     --color-option: #{$grey-50};
     --color-score: #{$grey-500};
-    --bg-s: url("../../assets/images/pattern-background-mobile-light.svg");
-    --bg-m: url("../../assets/images/pattern-background-tablet-light.svg");
-    --bg-l: url("../../assets/images/pattern-background-desktop-light.svg");
+    --bg-s: url("/assets/images/pattern-background-mobile-light.svg");
+    --bg-m: url("/assets/images/pattern-background-tablet-light.svg");
+    --bg-l: url("/assets/images/pattern-background-desktop-light.svg");
 
 }
 
@@ -37,9 +37,9 @@ body.dark-theme {
     --color-muted: #{$blue-300};
     --color-option: #{$purple-600};
     --color-score :#{$white};
-    --bg-s: url("../../assets/images/pattern-background-mobile-dark.svg");
-    --bg-m: url("../../assets/images/pattern-background-tablet-dark.svg");
-    --bg-l: url("../../assets/images/pattern-background-desktop-dark.svg");
+    --bg-s: url("/assets/images/pattern-background-mobile-dark.svg");
+    --bg-m: url("/assets/images/pattern-background-tablet-dark.svg");
+    --bg-l: url("/assets/images/pattern-background-desktop-dark.svg");
 
 }
 

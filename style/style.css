@@ -5,9 +5,9 @@
   --color-muted: #626C7F;
   --color-option: #F4F6FA;
   --color-score: #626C7F;
-  --bg-s: url("../../assets/images/pattern-background-mobile-light.svg");
-  --bg-m: url("../../assets/images/pattern-background-tablet-light.svg");
-  --bg-l: url("../../assets/images/pattern-background-desktop-light.svg");
+  --bg-s: url("/assets/images/pattern-background-mobile-light.svg");
+  --bg-m: url("/assets/images/pattern-background-tablet-light.svg");
+  --bg-l: url("/assets/images/pattern-background-desktop-light.svg");
 }
 
 body.dark-theme {
@@ -17,9 +17,9 @@ body.dark-theme {
   --color-muted: #ABC1E1;
   --color-option: #A729F5;
   --color-score:#ffffff;
-  --bg-s: url("../../assets/images/pattern-background-mobile-dark.svg");
-  --bg-m: url("../../assets/images/pattern-background-tablet-dark.svg");
-  --bg-l: url("../../assets/images/pattern-background-desktop-dark.svg");
+  --bg-s: url("/assets/images/pattern-background-mobile-dark.svg");
+  --bg-m: url("/assets/images/pattern-background-tablet-dark.svg");
+  --bg-l: url("/assets/images/pattern-background-desktop-dark.svg");
 }
 
 *,
